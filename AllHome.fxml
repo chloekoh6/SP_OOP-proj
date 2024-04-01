@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="530.0" prefWidth="371.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AllHomeController">
+   <children>
+      <Label layoutX="27.0" layoutY="75.0" prefHeight="36.0" prefWidth="142.0" text="ANNOUNCEMENTS:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="102.0" prefHeight="36.0" prefWidth="134.0" text="Class students, " />
+      <ToolBar prefHeight="50.0" prefWidth="371.0">
+        <items>
+          <Button layoutX="202.0" layoutY="7.0" mnemonicParsing="false" onAction="#onMoreClicked" prefHeight="36.0" prefWidth="36.0" style="-fx-background-color: #50607e; -fx-background-radius: 1em;" textFill="#50607e">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/menu-burger-free-icon-font.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label prefHeight="29.0" prefWidth="250.0" text="                                HOME                          " />
+            <Circle fill="#a6b7c7" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
+        </items>
+      </ToolBar>
+      <Label layoutX="27.0" layoutY="223.0" prefHeight="36.0" prefWidth="142.0" text="IMPORTANT DATES:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="138.0" prefHeight="36.0" prefWidth="134.0" text="your choices for the " />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="186.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Pictures/Screenshots/2022-08-03%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="21.0" layoutY="120.0" prefHeight="36.0" prefWidth="154.0" text="please remeber to submit " />
+      <Label layoutX="21.0" layoutY="156.0" prefHeight="36.0" prefWidth="125.0" text="upcoming semester's" />
+      <Label layoutX="21.0" layoutY="174.0" prefHeight="36.0" prefWidth="134.0" text="timetable. Thank you." />
+      <Label layoutX="24.0" layoutY="259.0" prefHeight="30.0" prefWidth="310.0" text="End of Semester Examination starting from 22 Aug" />
+      <Label layoutX="24.0" layoutY="289.0" text="Timetable submission by 13 Oct 2022" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" prefHeight="530.0" prefWidth="371.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CMoreController">
+   <children>
+      <Label layoutX="33.0" layoutY="63.0" prefHeight="36.0" prefWidth="142.0" text="ANNOUNCEMENTS:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ToolBar prefHeight="50.0" prefWidth="371.0">
+        <items>
+            <Label prefHeight="30.0" prefWidth="293.0" text="                                                HOME                          " />
+            <Circle fill="#a6b7c7" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
+        </items>
+      </ToolBar>
+      <Label layoutX="33.0" layoutY="149.0" prefHeight="36.0" prefWidth="142.0" text="IMPORTANT DATES:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4f6a8c" height="530.0" stroke="BLACK" strokeType="INSIDE" width="249.0" />
+      <Button layoutY="63.0" mnemonicParsing="false" onAction="#onClassCliked" prefHeight="50.0" prefWidth="249.0" text="CLASS TIMETABLE                                    -&gt;" />
+      <Button layoutY="134.0" mnemonicParsing="false" onAction="#onGradesCliked" prefHeight="50.0" prefWidth="249.0" text="GRADES TRACKER                                    -&gt;" />
+      <Button layoutX="26.0" layoutY="347.0" mnemonicParsing="false" onAction="#onLogOutCliked" prefHeight="36.0" prefWidth="194.0" text="LOG OUT" />
+      <Button fx:id="btnMore" layoutX="202.0" layoutY="7.0" mnemonicParsing="false" onAction="#onMoreClicked" prefHeight="36.0" prefWidth="36.0" style="-fx-background-color: #50607e; -fx-background-radius: 1em;" textFill="#50607e">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/menu-burger-free-icon-font.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="-1.0" layoutY="206.0" mnemonicParsing="false" onAction="#onChoiceCliked" prefHeight="50.0" prefWidth="249.0" text="CHOICE SUBMISSION                             -&gt;" />
+      <Button layoutY="275.0" mnemonicParsing="false" onAction="#onFriendsCliked" prefHeight="50.0" prefWidth="249.0" text="FRIENDS TIMETABLE                               -&gt;" />
+   </children>
+</AnchorPane>

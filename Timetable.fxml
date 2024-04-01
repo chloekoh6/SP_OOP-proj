@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane prefHeight="530.0" prefWidth="371.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TimetableController">
+   <children>
+      <ToolBar prefHeight="50.0" prefWidth="371.0">
+        <items>
+          <Button fx:id="btnMore" layoutX="202.0" layoutY="7.0" mnemonicParsing="false" onAction="#onMoreClicked" prefHeight="36.0" prefWidth="36.0" style="-fx-background-color: #50607e; -fx-background-radius: 1em;" textFill="#50607e">
+               <graphic>
+                  <ImageView fitHeight="93.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/menu-burger-free-icon-font.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label prefHeight="30.0" prefWidth="255.0" text="                        CLASS TIMETABLE              " />
+            <Circle fill="#a6b7c7" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
+        </items>
+      </ToolBar>
+      <ScrollPane layoutX="26.0" layoutY="119.0" prefHeight="386.0" prefWidth="322.0">
+         <content>
+            <TableView fx:id="tbData" prefHeight="372.0" prefWidth="518.0">
+              <columns>
+                <TableColumn fx:id="days" minWidth="5.0" prefWidth="75.20000725984573" text="DAY" />
+                  <TableColumn fx:id="modu" prefWidth="91.20001983642578" text="MODULE" />
+                <TableColumn fx:id="startt" prefWidth="75.0" text="START" />
+                  <TableColumn fx:id="endt" prefWidth="75.0" text="END" />
+                  <TableColumn fx:id="lect" prefWidth="122.39996337890625" text="LECTURER" />
+                  <TableColumn fx:id="loca" prefWidth="75.0" text="LOCATION" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Button layoutX="26.0" layoutY="69.0" mnemonicParsing="false" onAction="#onGoClicked" prefHeight="30.0" prefWidth="69.0" text="Choices" />
+   </children>
+</AnchorPane>

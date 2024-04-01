@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="540.0" prefWidth="371.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GradesEditController">
+   <children>
+      <Label prefHeight="26.0" prefWidth="50.0" text="CGPA:" />
+      <AnchorPane layoutX="15.0" layoutY="108.0" minHeight="0.0" minWidth="0.0" prefHeight="418.0" prefWidth="342.0" style="-fx-background-color: #405b81;">
+         <children>
+            <Label layoutX="162.0" layoutY="34.0" prefHeight="30.0" prefWidth="58.0" text="Target:" textFill="WHITE" />
+            <TextField fx:id="e1" layoutX="213.0" layoutY="87.0" prefHeight="26.0" prefWidth="42.0" />
+            <TextField fx:id="e2" layoutX="213.0" layoutY="124.0" prefHeight="26.0" prefWidth="42.0" />
+            <TextField fx:id="e3" layoutX="213.0" layoutY="161.0" prefHeight="26.0" prefWidth="42.0" />
+            <TextField fx:id="e4" layoutX="213.0" layoutY="198.0" prefHeight="26.0" prefWidth="42.0" />
+            <TextField fx:id="e5" layoutX="213.0" layoutY="235.0" prefHeight="26.0" prefWidth="42.0" />
+            <TextField fx:id="e6" layoutX="213.0" layoutY="272.0" prefHeight="15.0" prefWidth="42.0" />
+            <TextField fx:id="target" layoutX="282.0" layoutY="34.0" prefHeight="30.0" prefWidth="36.0" />
+            <ComboBox fx:id="grade" layoutX="213.0" layoutY="34.0" prefHeight="30.0" prefWidth="64.0" />
+            <Button layoutX="200.0" layoutY="359.0" mnemonicParsing="false" onAction="#onComputeClicked" text="Compute" />
+            <Label fx:id="gt" layoutX="131.0" layoutY="307.0" prefHeight="30.0" prefWidth="42.0" style="-fx-background-color: #c6d6e7;" textAlignment="CENTER" />
+            <Label fx:id="g1" layoutX="131.0" layoutY="85.0" prefHeight="30.0" prefWidth="42.0" style="-fx-background-color: #c6d6e7;" />
+            <Label fx:id="g2" layoutX="131.0" layoutY="122.0" prefHeight="30.0" prefWidth="42.0" style="-fx-background-color: #c6d6e7;" />
+            <Label fx:id="g3" layoutX="131.0" layoutY="159.0" prefHeight="30.0" prefWidth="42.0" style="-fx-background-color: #c6d6e7;" />
+            <Label fx:id="g4" layoutX="131.0" layoutY="196.0" prefHeight="30.0" prefWidth="42.0" style="-fx-background-color: #c6d6e7;" />
+            <Label fx:id="g5" layoutX="131.0" layoutY="233.0" prefHeight="30.0" prefWidth="42.0" style="-fx-background-color: #c6d6e7;" />
+            <Label fx:id="g6" layoutX="131.0" layoutY="270.0" prefHeight="30.0" prefWidth="42.0" style="-fx-background-color: #c6d6e7;" />
+            <Button layoutX="277.0" layoutY="359.0" mnemonicParsing="false" onAction="#onSaveClicked" text="Save" />
+            <Label fx:id="output" layoutX="17.0" layoutY="378.0" prefHeight="30.0" prefWidth="174.0" textFill="#fcf9f9" />
+            <Label fx:id="wt" layoutX="23.0" layoutY="309.0" prefHeight="30.0" prefWidth="90.0" textAlignment="CENTER" textFill="#f4f4f4" />
+            <Label fx:id="w1" layoutX="23.0" layoutY="85.0" prefHeight="30.0" prefWidth="90.0" textFill="WHITE" />
+            <Label fx:id="w2" layoutX="23.0" layoutY="122.0" prefHeight="30.0" prefWidth="90.0" textFill="WHITE" />
+            <Label fx:id="w3" layoutX="23.0" layoutY="159.0" prefHeight="30.0" prefWidth="90.0" textFill="WHITE" />
+            <Label fx:id="w4" layoutX="23.0" layoutY="196.0" prefHeight="30.0" prefWidth="90.0" textFill="WHITE" />
+            <Label fx:id="w5" layoutX="23.0" layoutY="233.0" prefHeight="30.0" prefWidth="90.0" textFill="WHITE" />
+            <Label fx:id="w6" layoutX="23.0" layoutY="272.0" prefHeight="30.0" prefWidth="90.0" textFill="WHITE" />
+            <Label layoutX="14.0" layoutY="34.0" prefHeight="30.0" prefWidth="58.0" text="Mod:" textFill="WHITE" />
+            <ComboBox fx:id="mod" layoutX="43.0" layoutY="34.0" prefHeight="30.0" prefWidth="64.0" />
+            <Button layoutX="113.0" layoutY="34.0" mnemonicParsing="false" onAction="#onGoClicked" prefHeight="30.0" prefWidth="36.0" text="GO" />
+            <Label fx:id="gt1" layoutX="213.0" layoutY="308.0" prefHeight="30.0" prefWidth="42.0" style="-fx-background-color: #c6d6e7;" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+      <ToolBar prefHeight="50.0" prefWidth="371.0">
+         <items>
+            <Button fx:id="btnMore" layoutX="202.0" layoutY="7.0" mnemonicParsing="false" onAction="#onMoreClicked" prefHeight="36.0" prefWidth="36.0" style="-fx-background-color: #50607e; -fx-background-radius: 1em;" textFill="#50607e">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/menu-burger-free-icon-font.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label prefHeight="29.0" prefWidth="264.0" text="                           GRADE TRACKER              " />
+            <Circle fill="#a6b7c7" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
+         </items>
+      </ToolBar>
+      <Label layoutX="15.0" layoutY="60.0" prefHeight="36.0" prefWidth="127.0" text="GPA:" />
+      <Label fx:id="txtgpa" layoutX="57.0" layoutY="63.0" prefHeight="30.0" prefWidth="42.0" style="-fx-background-color: #c6d6e7;" />
+      <Button layoutX="103.0" layoutY="63.0" mnemonicParsing="false" onAction="#onGetClicked" prefHeight="30.0" prefWidth="38.0" style="-fx-background-color: #c6d6e7;" text="Get" />
+   </children>
+</AnchorPane>
